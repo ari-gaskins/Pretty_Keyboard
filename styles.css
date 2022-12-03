@@ -1,3 +1,16 @@
 /* styles to shape keyboard */
 
-/* 
+/* default color scheme */
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+p {
+    display: inline-block;
+}
+
+div {
+    text-align: center;
+}
+
