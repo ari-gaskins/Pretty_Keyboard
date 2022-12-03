@@ -1,5 +1,8 @@
 /* styles to shape keyboard */
 
+/*font*/
+/*@import url() */
+
 /* default color scheme */
 body {
     color: #000000;
@@ -14,3 +17,12 @@ div {
     text-align: center;
 }
 
+/*letter keys*/
+.key {
+    height: 1em;
+    width: 1em;
+    border: 5px solid;
+    padding: 1rem;
+    margin: 2px;
+    border-radius: 20px;
+}
