@@ -39,24 +39,102 @@ p {
 
 /*color palette options*/
 #colors { 
-    text-align: center;
+    text-align: center; 
 }
 
 li {
-    display: inline;
+    display: inline; 
 }
 
-#default {
+#default, #default-dark {
     color: #000000;
-    background-color: #ffffff;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
 }
 
-#default-dark {
+#default:hover, #default:focus { 
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#default-dark:hover, #default-dark:focus {
     color: #ffffff;
     background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
+#baby-blues {
+    color: #5590b4;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+}
 
+#baby-blues:hover, #baby-blues:focus {
+    color: #c2efff;
+    background-color: #5590b4;
+    border: 2px solid #e0c07b;
+    border-radius: 5px;
+}
+
+#beach-day {
+    color: #cf6120;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#beach-day:hover, #beach-day:focus {
+    color: #ffffff;
+    background-color: #b6a290;
+    border: 2px solid #cf6120;
+    border-radius: 5px;
+}
+
+#orchid-field {
+    color: #3c1e6c;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#orchid-field:hover, #orchid-field:focus {
+    color: #f3f0dd;
+    background-color: #884389;
+    border: 2px solid #626b1e;
+    border-radius: 5px;
+}
+
+#hacker-man-classic {
+    color: #20c20e;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#hacker-man-classic:hover, #hover-man-classic:focus {
+    color: #20c20e;
+    background-color: #000000;
+    border: 2px solid #20c20e;
+    border-radius: 5px;
+}
+
+#hacker-man-blue {
+    color: #4b7eb3;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#hacker-man-blue:hover, #hacker-man-blue:focus {
+    color: #4b7eb3;
+    background-color: #243c55;
+    border: 2px solid #4b7eb3;
+    border-radius: 5px;
+}
 
 /*normal keys*/
 .key, .primary-key {
