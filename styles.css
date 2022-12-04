@@ -3,10 +3,24 @@
 /*font*/
 /*@import url() */
 
+/*page grid setup*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "colors"
+        "."
+        "keyboard";
+}
+
 /* default color scheme */
 body {
     color: #000000;
     background-color: #ffffff;
+    vertical-align: baseline;
+    min-width: 1250px;
+    min-height: 350px;
 }
 
 p {
@@ -17,8 +31,8 @@ div {
     text-align: center;
 }
 
-/*letter keys*/
-.key {
+/*normal keys*/
+.key, .primary-key {
     height: 1em;
     width: 1em;
     border: 5px solid;
@@ -26,3 +40,5 @@ div {
     margin: 2px;
     border-radius: 20px;
 }
+
+

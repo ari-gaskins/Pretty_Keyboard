@@ -7,90 +7,92 @@
         <title>Pretty Keyboard</title>
         <link href="styles.css" type="text/css" rel="stylesheet" />
     </head>
-    <body>
-        <!--default is black and white-->
-        <select name="colors" id="colors">
-            <option value="none" selected="selected" disabled="disabled" hidden="hidden">Select Color Palette</option> 
+    <body> 
+        <ul id="colors">
+            <!--default is black and white-->
+            <li><button id="default">Default</button></li>
             <!--color palette #645-->
-            <option value="baby-blues">Baby Blues</option>
+            <li><button id="baby-blues">Baby Blues</button></li>
             <!--color palette #425-->
-            <option value="beach-day">Beach Day</option>
+            <li><button id="beach-day">Beach Day</button></li>
             <!--color palette #544-->
-            <option value="orchid-field">Orchid Field</option>
+            <li><button id="orchid-field">Orchid Field</button></li>
             <!--black and neon green-->
-            <option value="hacker-man">Hacker Man</option>
+            <li><button id="hacker-man-classic">Hacker-Man (Classic)</button></li>
             <!--dark blue and neon light blue-->
-            <option value="hacker-man-blue">Hacker Man (blue)</option>
-        </select>
-        <div class="first-row"> 
-            <p class="primary-key"><span class="shift-key">~</span>`</p> 
-            <p class="primary-key"><span class="shift-key">!</span>1</p> 
-            <p class="primary-key"><span class="shift-key">@</span>2</p> 
-            <p class="primary-key"><span class="shift-key">#</span>3</p> 
-            <p class="primary-key"><span class="shift-key">$</span>4</p> 
-            <p class="primary-key"><span class="shift-key">%</span>5</p> 
-            <p class="primary-key"><span class="shift-key">^</span>6</p> 
-            <p class="primary-key"><span class="shift-key">&</span>7</p> 
-            <p class="primary-key"><span class="shift-key">*</span>8</p> 
-            <p class="primary-key"><span class="shift-key">(</span>9</p> 
-            <p class="primary-key"><span class="shift-key">)</span>0</p> 
-            <p class="primary-key"><span class="shift-key">_</span>-</p> 
-            <p class="primary-key"><span class="shift-key">+</span>=</p>
-            <p id="backspace">backspace</p>
-        </div>
-        <div class="second-row">
-            <p id="tab">tab</p>
-            <p class="key">Q</p>
-            <p class="key">W</p>
-            <p class="key">E</p>
-            <p class="key">R</p>
-            <p class="key">T</p>
-            <p class="key">Y</p>
-            <p class="key">U</p>
-            <p class="key">I</p>
-            <p class="key">O</p>
-            <p class="key">P</p> 
-            <p class="primary-key"><span class="shift-key">{</span>[</p> 
-            <p class="primary-key"><span class="shift-key">}</span>]</p> 
-            <p class="primary-key"><span class="shift-key">|</span>\</p>
-        </div>
-        <div class="third-row">
-            <p id="caps-lock">caps lock</p>
-            <p class="key">A</p>
-            <p class="key">S</p>
-            <p class="key">D</p>
-            <p class="key">F</p>
-            <p class="key">G</p>
-            <p class="key">H</p>
-            <p class="key">J</p>
-            <p class="key">K</p>
-            <p class="key">L</p> 
-            <p class="primary-key"><span class="shift-key">:</span>;</p> 
-            <p class="primary-key"><span class="shift-key">"</span>'</p>
-            <p id="enter">enter</p>
-        </div>
-        <div class="fourth-row">
-            <p id="shift">shift</p>
-            <p class="key">Z</p>
-            <p class="key">X</p>
-            <p class="key">C</p>
-            <p class="key">V</p>
-            <p class="key">B</p>
-            <p class="key">N</p>
-            <p class="key">M</p> 
-            <p class="primary-key"><span class="shift-key">&#60</span>,</p> 
-            <p class="primary-key"><span class="shift-key">&#62</span>.</p> 
-            <p class="primary-key"><span class="shift-key">?</span>/</p>
-            <p id="shift">shift</p>
-        </div>
-        <div class="fifth-row">
-            <p class="key">ctrl</p>
-            <p class="key">fn</p>
-            <p id="special-key"></p>
-            <p class="key">alt</p>
-            <p id="spacebar"></p>
-            <p class="key">alt</p>
-            <p class="key">ctrl</p>
+            <li><button id="hacker-man-blue">Hacker-Man (Blue)</button></li>
+        </ul>      
+        <div id="keyboard">
+            <div class="first-row"> 
+                <p class="primary-key"><span class="shift-key">~</span>`</p> 
+                <p class="primary-key"><span class="shift-key">!</span>1</p> 
+                <p class="primary-key"><span class="shift-key">@</span>2</p> 
+                <p class="primary-key"><span class="shift-key">#</span>3</p> 
+                <p class="primary-key"><span class="shift-key">$</span>4</p> 
+                <p class="primary-key"><span class="shift-key">%</span>5</p> 
+                <p class="primary-key"><span class="shift-key">^</span>6</p> 
+                <p class="primary-key"><span class="shift-key">&</span>7</p> 
+                <p class="primary-key"><span class="shift-key">*</span>8</p> 
+                <p class="primary-key"><span class="shift-key">(</span>9</p> 
+                <p class="primary-key"><span class="shift-key">)</span>0</p> 
+                <p class="primary-key"><span class="shift-key">_</span>-</p> 
+                <p class="primary-key"><span class="shift-key">+</span>=</p>
+                <p id="backspace">backspace</p>
+            </div>
+            <div class="second-row">
+                <p id="tab">tab</p>
+                <p class="key">Q</p>
+                <p class="key">W</p>
+                <p class="key">E</p>
+                <p class="key">R</p>
+                <p class="key">T</p>
+                <p class="key">Y</p>
+                <p class="key">U</p>
+                <p class="key">I</p>
+                <p class="key">O</p>
+                <p class="key">P</p> 
+                <p class="primary-key"><span class="shift-key">{</span>[</p> 
+                <p class="primary-key"><span class="shift-key">}</span>]</p> 
+                <p class="primary-key"><span class="shift-key">|</span>\</p>
+            </div>
+            <div class="third-row">
+                <p id="caps-lock">caps lock</p>
+                <p class="key">A</p>
+                <p class="key">S</p>
+                <p class="key">D</p>
+                <p class="key">F</p>
+                <p class="key">G</p>
+                <p class="key">H</p>
+                <p class="key">J</p>
+                <p class="key">K</p>
+                <p class="key">L</p> 
+                <p class="primary-key"><span class="shift-key">:</span>;</p> 
+                <p class="primary-key"><span class="shift-key">"</span>'</p>
+                <p id="enter">enter</p>
+            </div>
+            <div class="fourth-row">
+                <p id="shift">shift</p>
+                <p class="key">Z</p>
+                <p class="key">X</p>
+                <p class="key">C</p>
+                <p class="key">V</p>
+                <p class="key">B</p>
+                <p class="key">N</p>
+                <p class="key">M</p> 
+                <p class="primary-key"><span class="shift-key">&#60</span>,</p> 
+                <p class="primary-key"><span class="shift-key">&#62</span>.</p> 
+                <p class="primary-key"><span class="shift-key">?</span>/</p>
+                <p id="shift">shift</p>
+            </div>
+            <div class="fifth-row">
+                <p class="ctrl">ctrl</p>
+                <p class="fn">fn</p>
+                <p id="special-key"></p>
+                <p class="alt">alt</p>
+                <p id="spacebar"></p>
+                <p class="alt">alt</p>
+                <p class="ctrl">ctrl</p>
+            </div>
         </div>
     </body>
     <script></script>
