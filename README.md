@@ -10,4 +10,5 @@
     - might add random words to be typed and registered for accuracy and speed
     - might add where if you type the wrong letter, the key will be a 'harsher' color in the palette, but letters will not show penalties
     - semi-inspired by monkeytype, less competitive, more vibes
-    - takes into account the environment people may be in when typing, not competing but chilling on their computer like any other old day. idea is to help people speed up their baseline typing speed, not their high stress typing speed. 
+    - takes into account the environment people may be in when typing, not competing but chilling on their computer like any other old day. idea is to help people speed up their baseline typing speed, not their high stress typing speed.
+    - minimalist vibes 
