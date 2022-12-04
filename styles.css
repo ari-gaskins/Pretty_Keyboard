@@ -23,12 +23,12 @@ body {
     min-height: 350px;
 }
 
-p {
-    display: inline-block;
+#keyboard {
+    text-align: center;
 }
 
-div {
-    text-align: center;
+p {
+    display: inline-block;
 }
 
 /*normal keys*/
@@ -41,4 +41,50 @@ div {
     border-radius: 20px;
 }
 
+/*shift keys*/
+.shift-key {
+    display: none
+}
 
+/*large keys*/
+.large-key {
+    height: 1em;
+    border: 5px solid;
+    padding: 1rem;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+#backspace {
+    width: 5em;
+    text-align: left;
+}
+
+#tab {
+    width: 5em;
+    text-align: right;
+}
+
+#caps-lock {
+    width: 5em;
+    text-align: right;
+}
+
+#enter {
+    width: 5em;
+    text-align: left;
+}
+
+#shift-left {
+    width: 7em;
+    text-align: right;
+}
+
+#shift-right {
+    width: 7em;
+    text-align: left;
+}
+
+#spacebar {
+    width: 24em;
+}
