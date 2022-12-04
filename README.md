@@ -12,3 +12,8 @@
     - semi-inspired by monkeytype, less competitive, more vibes
     - takes into account the environment people may be in when typing, not competing but chilling on their computer like any other old day. idea is to help people speed up their baseline typing speed, not their high stress typing speed.
     - minimalist vibes 
+
+_Color_ _Palettes_:
+    - color palette #645: #5590b4 #176582 #c2efff #c3b7ac #e0c07b (bottom to top)
+    - color palette #425: #000000 #cbc7bd #b6a290 #856951 #cf6120 (bottom to top)
+    - color palette #544: #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)

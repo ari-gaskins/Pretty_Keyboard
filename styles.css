@@ -6,11 +6,11 @@
 /*page grid setup*/
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
         "colors"
-        "."
+        "type-test"
         "keyboard";
 }
 
@@ -23,13 +23,40 @@ body {
     min-height: 350px;
 }
 
+#type-test {
+    display: grid;
+    text-align: center;
+}
+
 #keyboard {
+    display: grid;
     text-align: center;
 }
 
 p {
     display: inline-block;
 }
+
+/*color palette options*/
+#colors { 
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+#default {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#default-dark {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
 
 /*normal keys*/
 .key, .primary-key {
