@@ -1,34 +1,34 @@
 # Pretty Keyboard
 
-*Goal*: To make a pretty keyboard, and different color palettes for it. Also to have keys color change using JavaScript.
+**Goal**: To make a pretty keyboard, and different color palettes for it. Also to have keys color change using JavaScript.
 
-*Ideas*: 
-    - starting as simple project, designing keyboard layout that is stylish and comfortable, keys can change color with button press using JavaScript
-    - might turn into typing test app, with super chill vibes 
-    - might add lofi beats based on different color palettes chosen
-    - might add random words to be typed and registered for accuracy and speed
-    - might add where if you type the wrong letter, the key will be a 'harsher' color in the palette, but letters will not show penalties
-    - semi-inspired by monkeytype, less competitive, more vibes
-    - takes into account the environment people may be in when typing, not competing but chilling on their computer like any other old day. idea is to help people speed up their baseline typing speed, not their high stress typing speed.
-    - minimalist vibes  
+**Ideas**: 
+    * starting as simple project, designing keyboard layout that is stylish and comfortable, keys can change color with button press using JavaScript
+    * might turn into typing test app, with super chill vibes 
+    * might add lofi beats based on different color palettes chosen
+    * might add random words to be typed and registered for accuracy and speed
+    * might add where if you type the wrong letter, the key will be a 'harsher' color in the palette, but letters will not show penalties
+    * semi-inspired by monkeytype, less competitive, more vibes
+    * takes into account the environment people may be in when typing, not competing but chilling on their computer like any other old day. idea is to help people speed up their baseline typing speed, not their high stress typing speed.
+    * minimalist vibes  
 
-_Color_ _Palettes_:
-    - color palette #645: #5590b4 #176582 #c2efff #c3b7ac #e0c07b (bottom to top)
-    - color palette #425: #ffffff #cbc7bd #b6a290 #856951 #cf6120 (bottom to top)
-    - color palette #544: #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)
-    - hacker green: #20c20e
-    - hacker light blue: #05b0ff, hacker dark blue: #243c55
+**Color** **Palettes**:
+    * color palette #645: #5590b4 #176582 #c2efff #c3b7ac #e0c07b (bottom to top)
+    * color palette #425: #ffffff #cbc7bd #b6a290 #856951 #cf6120 (bottom to top)
+    * color palette #544: #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)
+    * hacker green: #20c20e
+    * hacker light blue: #05b0ff, hacker dark blue: #243c55
 
-*Loose Tasks*: 
-    - add font-families
-    - write script to add interactivity to buttons
-    - upload to github
-    - figure out how to setup hrefs with javascript functionality
-    - maybe make colors into a navbar setup?
-    - figure out how to make it look cleaner
-    - want a toggle-able timer (hidden or visible)
-    - bonus: endless mode that can be ended with esc key
-    - might make settings into a hidden menu later
+**Loose Tasks**: 
+    * add font-families
+    * write script to add interactivity to buttons
+    * upload to github
+    * figure out how to setup hrefs with javascript functionality
+    * maybe make colors into a navbar setup?
+    * figure out how to make it look cleaner
+    * want a toggle-able timer (hidden or visible)
+    * bonus: endless mode that can be ended with esc key
+    * might make settings into a hidden menu later
 
 *Helpful sites*:
 color.adobe.com
