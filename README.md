@@ -20,15 +20,15 @@
     * hacker light blue: #05b0ff, hacker dark blue: #243c55
 
 **Loose Tasks**: 
-    * add font-families
-    * write script to add interactivity to buttons
-    * upload to github
-    * figure out how to setup hrefs with javascript functionality
-    * maybe make colors into a navbar setup?
-    * figure out how to make it look cleaner
-    * want a toggle-able timer (hidden or visible)
-    * bonus: endless mode that can be ended with esc key
-    * might make settings into a hidden menu later
+    [x] add font-families
+    [] write script to add interactivity to buttons
+    [x] upload to github
+    [] figure out how to setup hrefs with javascript functionality
+    [x] maybe make colors into a navbar setup?
+    [x] figure out how to make it look cleaner
+    [] want a toggle-able timer (hidden or visible)
+    [] bonus: endless mode that can be ended with esc key
+    [] might make settings into a hidden menu later
 
 *Helpful sites*:
 color.adobe.com
