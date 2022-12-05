@@ -132,7 +132,7 @@ li {
     border-radius: 5px;
 }
 
-#hacker-man-classic {
+#hackerman-classic {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
     color: #20c20e;
@@ -143,14 +143,14 @@ li {
     border: none;
 }
 
-#hacker-man-classic:hover, #hover-man-classic:focus {
+#hackerman-classic:hover, #hackerman-classic:focus {
     color: #20c20e;
     background-color: #000000;
     border: 2px solid #20c20e;
     border-radius: 5px;
 }
 
-#hacker-man-blue {
+#hackerman-blue {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
     color: #05b0ff;
@@ -161,7 +161,7 @@ li {
     border: none;
 }
 
-#hacker-man-blue:hover, #hacker-man-blue:focus {
+#hackerman-blue:hover, #hackerman-blue:focus {
     color: #05b0ff;
     background-color: #000000;
     border: 2px solid #05b0ff;
