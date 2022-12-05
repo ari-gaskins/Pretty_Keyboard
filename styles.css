@@ -1,7 +1,9 @@
 /* styles to shape keyboard */
 
-/*font*/
-/*@import url() */
+/*soft default font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+/*monospace hackerman font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Space+Mono&display=swap');
 
 /*page grid setup*/
 .grid {
@@ -16,6 +18,7 @@
 
 /* default color scheme */
 body {
+    font-family: 'Inter', sans-serif;
     color: #000000;
     background-color: #ffffff;
     vertical-align: baseline;
@@ -25,7 +28,10 @@ body {
 
 #type-test {
     display: grid;
+    font-size: 24px;
     text-align: center;
+    padding: 36px;
+    margin: 36px;
 }
 
 #keyboard {
@@ -35,6 +41,11 @@ body {
 
 p {
     display: inline-block;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 12px;
 }
 
 /*color palette options*/
@@ -47,13 +58,17 @@ li {
 }
 
 #default, #default-dark {
-    color: #000000;
+    font-size: 18px;
+    color: #ffffff;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
+    background-color: #000000;
 }
 
 #default:hover, #default:focus { 
+    color: #000000;
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 5px;
@@ -62,15 +77,18 @@ li {
 #default-dark:hover, #default-dark:focus {
     color: #ffffff;
     background-color: #000000;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     border-radius: 5px;
 }
 
 #baby-blues {
+    font-size: 18px;
     color: #5590b4;
+    background-color: #000000;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
 }
 
 #baby-blues:hover, #baby-blues:focus {
@@ -81,10 +99,13 @@ li {
 }
 
 #beach-day {
+    font-size: 18px;
     color: #cf6120;
+    background-color: #000000;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
 }
 
 #beach-day:hover, #beach-day:focus {
@@ -95,10 +116,13 @@ li {
 }
 
 #orchid-field {
-    color: #3c1e6c;
+    font-size: 18px;
+    color: #884389;
+    background-color: #000000;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
 }
 
 #orchid-field:hover, #orchid-field:focus {
@@ -109,30 +133,38 @@ li {
 }
 
 #hacker-man-classic {
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
     color: #20c20e;
+    background-color: #000000;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
 }
 
 #hacker-man-classic:hover, #hover-man-classic:focus {
     color: #20c20e;
     background-color: #000000;
-    border: 2px solid #000000;
+    border: 2px solid #20c20e;
     border-radius: 5px;
 }
 
 #hacker-man-blue {
-    color: #4b7eb3;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    color: #05b0ff;
+    background-color: #000000;
     padding: 5px;
-    margin: 2px;
+    margin: 5px;
     text-decoration: none;
+    border: none;
 }
 
 #hacker-man-blue:hover, #hacker-man-blue:focus {
-    color: #4b7eb3;
-    background-color: #243c55;
-    border: 2px solid #243c55;
+    color: #05b0ff;
+    background-color: #000000;
+    border: 2px solid #05b0ff;
     border-radius: 5px;
 }
 
