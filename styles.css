@@ -9,10 +9,10 @@
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-        "colors"
+        "navbar"
         "type-test"
         "keyboard";
-}
+} 
 
 /* default color scheme */
 body {
@@ -76,7 +76,7 @@ li {
 #baby-blues:hover, #baby-blues:focus {
     color: #c2efff;
     background-color: #5590b4;
-    border: 2px solid #e0c07b;
+    border: 2px solid #5590b4;
     border-radius: 5px;
 }
 
@@ -90,7 +90,7 @@ li {
 #beach-day:hover, #beach-day:focus {
     color: #ffffff;
     background-color: #b6a290;
-    border: 2px solid #cf6120;
+    border: 2px solid #b6a290;
     border-radius: 5px;
 }
 
@@ -104,7 +104,7 @@ li {
 #orchid-field:hover, #orchid-field:focus {
     color: #f3f0dd;
     background-color: #884389;
-    border: 2px solid #626b1e;
+    border: 2px solid #884389;
     border-radius: 5px;
 }
 
@@ -118,7 +118,7 @@ li {
 #hacker-man-classic:hover, #hover-man-classic:focus {
     color: #20c20e;
     background-color: #000000;
-    border: 2px solid #20c20e;
+    border: 2px solid #000000;
     border-radius: 5px;
 }
 
@@ -132,7 +132,7 @@ li {
 #hacker-man-blue:hover, #hacker-man-blue:focus {
     color: #4b7eb3;
     background-color: #243c55;
-    border: 2px solid #4b7eb3;
+    border: 2px solid #243c55;
     border-radius: 5px;
 }
 

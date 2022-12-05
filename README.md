@@ -19,3 +19,17 @@ _Color_ _Palettes_:
     - color palette #544: #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)
     - hacker green: #20c20e
     - hacker light blue: #4b7eb3, hacker dark blue: #243c55
+
+*Loose Tasks*: 
+    - add font-families
+    - write script to add interactivity to buttons
+    - upload to github
+    - figure out how to setup hrefs with javascript functionality
+    - maybe make colors into a navbar setup?
+    - figure out how to make it look cleaner
+    - maybe make the navbar slide up and down idk
+
+
+*Helpful sites*:
+color.adobe.com
+mycolor.space

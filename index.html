@@ -5,25 +5,25 @@
 <html>
     <head>
         <title>Pretty Keyboard</title>
-        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <link href="/styles.css" type="text/css" rel="stylesheet" />
     </head>
-    <body> 
-        <ul id="colors">
-            <!--default is black and white-->
-            <li><a href="" id="default">default</a></li>
-            <!--dark mode default-->
-            <li><a href="" id="default-dark">default (dark)</a></li>
-            <!--color palette #645-->
-            <li><a href="" id="baby-blues">baby blues</a></li>
-            <!--color palette #425-->
-            <li><a href="" id="beach-day">beach day</a></li>
-            <!--color palette #544-->
-            <li><a href="" id="orchid-field">orchid field</a></li>
-            <!--black and neon green-->
-            <li><a href="" id="hacker-man-classic">hacker-man (classic)</a></li>
-            <!--dark blue and neon light blue-->
-            <li><a href="" id="hacker-man-blue">hacker-man (blue)</a></li>
-        </ul>
+    <body>
+        <nav class="navbar">  
+            <ul id="colors">
+                <!--default is black and white-->
+                <li><button id="default">Default</button></li>
+                <!--color palette #645-->
+                <li><button id="baby-blues">Baby Blues</button></li>
+                <!--color palette #425-->
+                <li><button id="beach-day">Beach Day</button></li>
+                <!--color palette #544-->
+                <li><button id="orchid-field">Orchid Field</button></li>
+                <!--black and neon green-->
+                <li><button id="hacker-man-classic">Hacker-Man (Classic)</button></li>
+                <!--dark blue and neon light blue-->
+                <li><button id="hacker-man-blue">Hacker-Man (Blue)</button></li>
+            </ul>
+        </nav>
         <p id="type-test">Press any key to start</p>      
         <div id="keyboard">
             <!--31ems-->
@@ -94,5 +94,6 @@
             </div>
         </div>
     </body>
+    <script src="chai.js" type="text/javascript"></script>
     <script></script>
 </html>
