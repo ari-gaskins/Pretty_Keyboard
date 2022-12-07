@@ -5,6 +5,41 @@
 /*monospace hackerman font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Space+Mono&display=swap');
 
+/*color set*/
+:root {
+   /*defaults*/
+   --white: #ffffff;
+   --black: #000000;
+   
+   /*baby blues*/
+   --darkTeal: #176582;
+   --teal: #5590b4;
+   --lightTeal: #c2efff;
+   --babyTan: #c3b7ac;
+   --softYellow: #e0c07b;
+
+   /*beach day*/
+   /*--white*/
+   --greyTan: #cbc7bd;
+   --tan: #b6a290;
+   --deepTan: #856951;
+   --deepOrange: #cf6120;
+
+   /*orchid field*/
+   --plum: #3c1e6c;
+   --orchid: #884389;
+   --deepPink: #af7480;
+   --cream: #f3f0dd;
+   --plantGreen: #626b1e;
+
+   /*hackerman classic*/
+   --hackerGreen: #20c20e;
+
+   /*hackerman blue*/
+   --hackerLightBlue: #05b0ff;
+   --hackerDarkBlue: #243c55;
+}
+
 /*page grid setup*/
 .grid {
     display: grid;
@@ -19,8 +54,8 @@
 /* default color scheme */
 body {
     font-family: 'Inter', sans-serif;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--black);
+    background-color: var(--white);
     vertical-align: baseline;
     min-width: 1250px;
     min-height: 350px;
@@ -43,10 +78,13 @@ p {
     display: inline-block;
 }
 
+/*navbar features*/
 .navbar {
-    background-color: #000000;
+    background-color: var(--black);
     padding: 12px;
+    border-radius: 20px;
 }
+
 
 /*color palette options*/
 #colors { 
@@ -59,32 +97,32 @@ li {
 
 #default, #default-dark {
     font-size: 18px;
-    color: #ffffff;
+    color: var(--white);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
     border: none;
-    background-color: #000000;
+    background-color: var(--black);
 }
 
 #default:hover, #default:focus { 
-    color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 10px;
 }
 
 #default-dark:hover, #default-dark:focus {
-    color: #ffffff;
-    background-color: #000000;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    border-radius: 10px;
 }
 
 #baby-blues {
     font-size: 18px;
-    color: #5590b4;
-    background-color: #000000;
+    color: var(--teal);
+    background-color: var(--black);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -92,16 +130,16 @@ li {
 }
 
 #baby-blues:hover, #baby-blues:focus {
-    color: #c2efff;
-    background-color: #5590b4;
-    border: 2px solid #5590b4;
-    border-radius: 5px;
+    color: var(--lightTeal);
+    background-color: var(--teal);
+    border: 2px solid var(--teal);
+    border-radius: 10px;
 }
 
 #beach-day {
     font-size: 18px;
-    color: #cf6120;
-    background-color: #000000;
+    color: var(--deepOrange);
+    background-color: var(--black);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -109,16 +147,16 @@ li {
 }
 
 #beach-day:hover, #beach-day:focus {
-    color: #ffffff;
-    background-color: #b6a290;
-    border: 2px solid #b6a290;
-    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--tan);
+    border: 2px solid var(--tan);
+    border-radius: 10px;
 }
 
 #orchid-field {
     font-size: 18px;
-    color: #884389;
-    background-color: #000000;
+    color: var(--orchid);
+    background-color: var(--black);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -126,17 +164,17 @@ li {
 }
 
 #orchid-field:hover, #orchid-field:focus {
-    color: #f3f0dd;
-    background-color: #884389;
-    border: 2px solid #884389;
-    border-radius: 5px;
+    color: var(--cream);
+    background-color: var(--orchid);
+    border: 2px solid var(--orchid);
+    border-radius: 10px;
 }
 
 #hackerman-classic {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
-    color: #20c20e;
-    background-color: #000000;
+    color: var(--hackerGreen);
+    background-color: var(--black);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -144,17 +182,17 @@ li {
 }
 
 #hackerman-classic:hover, #hackerman-classic:focus {
-    color: #20c20e;
-    background-color: #000000;
-    border: 2px solid #20c20e;
-    border-radius: 5px;
+    color: var(--hackerGreen);
+    background-color: var(--black);
+    border: 2px solid var(--hackerGreen);
+    border-radius: 10px;
 }
 
 #hackerman-blue {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
-    color: #05b0ff;
-    background-color: #000000;
+    color: var(--hackerLightBlue);
+    background-color: var(--black);
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -162,10 +200,10 @@ li {
 }
 
 #hackerman-blue:hover, #hackerman-blue:focus {
-    color: #05b0ff;
-    background-color: #000000;
-    border: 2px solid #05b0ff;
-    border-radius: 5px;
+    color: var(--hackerLightBlue);
+    background-color: var(--hackerDarkBlue);
+    border: 2px solid var(--hackerLightBlue);
+    border-radius: 10px;
 }
 
 /*normal keys*/

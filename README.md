@@ -13,9 +13,9 @@
     * minimalist vibes  
 
 **Color** **Palettes**:
-    * color palette #645: #5590b4 #176582 #c2efff #c3b7ac #e0c07b (bottom to top)
-    * color palette #425: #ffffff #cbc7bd #b6a290 #856951 #cf6120 (bottom to top)
-    * color palette #544: #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)
+    * baby blues (color palette #645):  #176582 #5590b4 #c2efff #c3b7ac #e0c07b (bottom to top)
+    * beach day (color palette #425): #ffffff #cbc7bd #b6a290 #856951 #cf6120 (bottom to top)
+    * orchid field (color palette #544): #3c1e6c #884389 #af7480 #f3f0dd #626b1e (right to left)
     * hacker green: #20c20e
     * hacker light blue: #05b0ff, hacker dark blue: #243c55
 
@@ -29,6 +29,7 @@
     [] want a toggle-able timer (hidden or visible)
     [] bonus: endless mode that can be ended with esc key
     [] might make settings into a hidden menu later
+    [] write unit tests for main.js
 
 *Helpful sites*:
 color.adobe.com
