@@ -32,5 +32,11 @@
     [] write unit tests for main.js
 
 *Helpful sites*:
-color.adobe.com
-mycolor.space
+https://color.adobe.com
+https://mycolor.space
+[Icons8](https://www.icons8.com)
+
+License links:
+Icons from [Icons8]: close icons, settings icons
+    
+

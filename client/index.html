@@ -5,30 +5,35 @@
 <html>
     <head>
         <title>Pretty Keyboard</title>
-        <link href="/styles.css" type="text/css" rel="stylesheet" />
+        <link href="./styles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <nav class="navbar">  
-            <ul id="colors">
-                <!--default is black and white-->
-                <li><button id="default">Default</button></li>
-                <!--dark mode default-->
-                <li><button id="default-dark">Default (dark)</button></li>
-                <!--color palette #645-->
-                <li><button id="baby-blues">Baby Blues</button></li>
-                <!--color palette #425-->
-                <li><button id="beach-day">Beach Day</button></li>
-                <!--color palette #544-->
-                <li><button id="orchid-field">Orchid Field</button></li>
-                <!--black and neon green-->
-                <li><button id="hackerman-classic">Hackerman (classic)</button></li>
-                <!--dark blue and neon light blue-->
-                <li><button id="hackerman-blue">Hackerman (blue)</button></li>
-            </ul>
-            
-            <!--choose timer time here-->
-            <!--toggle timer on/off here-->
-        </nav>
+        <div id="nav-wrapper">
+            <div id="settings-wrapper">
+                <img id="settings" src="images/settings-default.png" alt="settings" />
+            </div> 
+            <nav class="navbar">  
+                <ul id="colors">
+                    <!--default is black and white-->
+                    <li><button id="default">Default</button></li>
+                    <!--dark mode default-->
+                    <li><button id="default-dark">Default (dark)</button></li>
+                    <!--color palette #645-->
+                    <li><button id="baby-blues">Baby Blues</button></li>
+                    <!--color palette #425-->
+                    <li><button id="beach-day">Beach Day</button></li>
+                    <!--color palette #544-->
+                    <li><button id="orchid-field">Orchid Field</button></li>
+                    <!--black and neon green-->
+                    <li><button id="hackerman-classic">Hackerman (classic)</button></li>
+                    <!--dark blue and neon light blue-->
+                    <li><button id="hackerman-blue">Hackerman (blue)</button></li>
+                </ul>
+
+                <!--choose timer time here-->
+                <!--toggle timer on/off here-->
+            </nav>
+        </div>
         <p id="type-test">Press any key to start</p>      
         <div id="keyboard">
             <!--31ems-->
@@ -97,6 +102,14 @@
             <div class="fifth-row">
                 <p class="large-key" id="spacebar"></p>
             </div>
+        </div>
+        <div id="acknowledgements">
+            <footer id="footer">
+                <a target="_blank" href="https://icons8.com/icon/82826/close">Close</a> 
+                icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                <a target="_blank" href="https://icons8.com/icon/zTSkVnVQ0nYV/settings">Settings</a>
+                 icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </footer>
         </div>
     </body>
     <script src="chai.js" type="text/javascript"></script>

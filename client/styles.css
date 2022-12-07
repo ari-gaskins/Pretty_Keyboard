@@ -61,6 +61,14 @@ body {
     min-height: 350px;
 }
 
+img {
+    width: 100%; 
+}
+
+#settings-wrapper {
+    text-align: center;
+}
+
 #type-test {
     display: grid;
     font-size: 24px;
@@ -83,6 +91,7 @@ p {
     background-color: var(--black);
     padding: 12px;
     border-radius: 20px;
+    visibility: hidden;
 }
 
 
