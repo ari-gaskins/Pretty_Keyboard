@@ -44,14 +44,15 @@
 .grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "navbar"
-        "type-test"
-        "keyboard";
+        "nav-wrapper"
+        "type-test-wrapper"
+        "keyboard"
+        "footer";
 } 
 
-/* default color scheme */
+/* default settings */
 body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
@@ -59,14 +60,7 @@ body {
     vertical-align: baseline;
     min-width: 1250px;
     min-height: 350px;
-}
-
-img {
-    width: 100%; 
-}
-
-#settings-wrapper {
-    text-align: center;
+    max-width: 1904px; 
 }
 
 #type-test {
@@ -80,20 +74,62 @@ img {
 #keyboard {
     display: grid;
     text-align: center;
+    padding: 60px;
+    margin-bottom: 260px;
 }
 
 p {
     display: inline-block;
 }
 
+#acknowledgements {
+    text-align: bottom;
+    text-align: center;
+}
+
 /*navbar features*/
-.navbar {
+#navbar {
     background-color: var(--black);
     padding: 12px;
     border-radius: 20px;
     visibility: hidden;
 }
 
+/*settings button*/
+#settings-wrapper {
+    text-align: center;
+}
+
+#settings {
+    background-image: url('/images/settings-default.png');
+    border: none;
+    background-color: inherit;
+    width: 24px;
+    height: 24px;
+    visibility: visible;
+}
+
+#settings:hover, #settings:focus {
+    cursor: pointer;
+}
+
+/*close button*/
+#close-wrapper {
+    text-align: center;
+}
+
+#close {
+    background-image: url('/images/close-default.png');
+    border: none;
+    background-color: inherit;
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
+}
+
+#close:hover, #close:focus {
+    cursor: pointer;
+}
 
 /*color palette options*/
 #colors { 

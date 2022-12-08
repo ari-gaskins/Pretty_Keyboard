@@ -1,5 +1,7 @@
-// navbar
-let navbar = document.getElementsByClassName('navbar');
+// navbar variables
+let navbarToggle = document.getElementById('navbar');
+let settingsButton = document.getElementById('settings');
+let closeButton = document.getElementById('close');
 
 // buttons that change theme
 let defaultButton = document.getElementById('default');
@@ -36,9 +38,15 @@ let hundredTwentySeconds = 120;
 
 // function that handles countdown time visible or not
 
-// function that handles settings visibility
-const navbarSettingsToggle = () => {
-    
+// event listener that handles settings visibility
+settingsButton.onclick = () => { 
+   navbarToggle.style.visibility = 'visible';
+   settingsButton.style.visibility = 'hidden';
+   closeButton.style.visibility = 'visible';
 }
 
-// onclick for navbar toggle
+closeButton.onclick = () => {
+   navbarToggle.style.visibility = 'hidden';
+   settingsButton.style.visibility = 'visible';
+   closeButton.style.visibility = 'hidden';
+}

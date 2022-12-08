@@ -5,14 +5,14 @@
 <html>
     <head>
         <title>Pretty Keyboard</title>
-        <link href="./styles.css" type="text/css" rel="stylesheet" />
+        <link href="styles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div id="nav-wrapper">
             <div id="settings-wrapper">
-                <img id="settings" src="images/settings-default.png" alt="settings" />
+                <button id="settings"></button>
             </div> 
-            <nav class="navbar">  
+            <nav id="navbar">  
                 <ul id="colors">
                     <!--default is black and white-->
                     <li><button id="default">Default</button></li>
@@ -33,8 +33,13 @@
                 <!--choose timer time here-->
                 <!--toggle timer on/off here-->
             </nav>
+            <div id="close-wrapper">
+                <button id="close"></button>
+            </div>
         </div>
-        <p id="type-test">Press any key to start</p>      
+        <div id="type-test-wrapper">
+            <p id="type-test">Press any key to start</p>
+        </div>      
         <div id="keyboard">
             <!--31ems-->
             <div class="first-row"> 
@@ -107,11 +112,12 @@
             <footer id="footer">
                 <a target="_blank" href="https://icons8.com/icon/82826/close">Close</a> 
                 icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                <br />
                 <a target="_blank" href="https://icons8.com/icon/zTSkVnVQ0nYV/settings">Settings</a>
                  icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             </footer>
         </div>
     </body>
-    <script src="chai.js" type="text/javascript"></script>
-    <script></script>
+    <!--<script src="chai.js" type="text/javascript"></script>-->
+    <script src="main.js" type="text/javascript"></script>
 </html>
