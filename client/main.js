@@ -21,7 +21,6 @@ let typeTestField = document.getElementById('type-test').innerHTML;
 
 // need variables representing HTML elements for timer countdown
 
-// need elements to represent 
 
 // seconds to countdown from
 let thirtySeconds = 30;
@@ -29,14 +28,6 @@ let fortyFiveSeconds = 45;
 let sixtySeconds = 60;
 let ninetySeconds = 90;
 let hundredTwentySeconds = 120;
-
-
-// function that registers keypresses and returns key code
-
-// function that delivers random words to typeTestField
-// after any key is pressed 
-
-// function that handles countdown time visible or not
 
 // event listener that handles settings visibility
 settingsButton.onclick = () => { 
@@ -50,3 +41,17 @@ closeButton.onclick = () => {
    settingsButton.style.visibility = 'visible';
    closeButton.style.visibility = 'hidden';
 }
+
+// function that shows shift keys and hides primary keys 
+// when shift is held
+
+// function that delivers type test to typeTestField after any key is pressed 
+
+// function that registers keypresses and returns key code
+
+// function that takes key code and string array arguments
+// and maps it to each individual character.
+// Note: string array should be made up of individual characters
+
+// function that handles countdown time visible or not
+

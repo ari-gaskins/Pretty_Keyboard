@@ -23,13 +23,15 @@
     [x] add font-families
     [] write script to add interactivity to buttons
     [x] upload to github
-    [] figure out how to setup hrefs with javascript functionality
+    [x] figure out how to setup hrefs with javascript functionality
     [x] maybe make colors into a navbar setup?
     [x] figure out how to make it look cleaner
+    [] setup typing test functionality
+    [] setup timer modes as dropdown menu in navbar
     [] want a toggle-able timer (hidden or visible)
-    [] bonus: endless mode that can be ended with esc key
-    [] might make settings into a hidden menu later
-    [] write unit tests for main.js
+    [] bonus: endless timer mode that can be ended with esc key
+    [x] might make settings into a hidden menu later
+    [] write unit tests for main.js (will have to do after to spend time learning)
 
 *Helpful sites*:
 https://color.adobe.com
