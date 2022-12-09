@@ -1,5 +1,8 @@
 // key press capture module
 
+// function that delivers type test to typeTestField after 
+//any key is pressed
+
 // function that shows shift keys and hides primary keys 
 // when shift is held
 

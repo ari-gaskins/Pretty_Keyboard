@@ -26,6 +26,7 @@
     [x] figure out how to setup hrefs with javascript functionality
     [x] maybe make colors into a navbar setup?
     [x] figure out how to make it look cleaner
+    [] make color button change color palette
     [] setup typing test functionality
     [x] setup timer modes as dropdown menu in navbar
     [] find toggle (switch or button)
