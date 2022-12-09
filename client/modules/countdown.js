@@ -19,4 +19,6 @@ const countdown = (s) => {
 // test iteration
 // secondsArray.forEach((elem) => console.log(elem));
 
+// function that handles countdown time visible or not
+
 export {secondsArray, countdown};

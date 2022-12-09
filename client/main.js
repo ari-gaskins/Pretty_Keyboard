@@ -1,3 +1,7 @@
+// imports from countdown module
+//import { secondsArray } from "./modules/countdown";
+//import { countdown } from "./modules/countdown";
+
 // navbar variables
 let navbarToggle = document.getElementById('navbar');
 let settingsButton = document.getElementById('settings');
@@ -24,10 +28,6 @@ let selectedOption = document.getElementById('timer-seconds');
 // test value retrieval
 // console.log(selectedOption.value);
 
-// imports from countdown module
-import { secondsArray } from "./modules/countdown";
-import { countdown } from "./modules/countdown";
-
 // seconds to countdown from
 let thirtySeconds = 30;
 let fortyFiveSeconds = 45;
@@ -48,16 +48,6 @@ closeButton.onclick = () => {
    closeButton.style.visibility = 'hidden';
 }
 
-// function that shows shift keys and hides primary keys 
-// when shift is held
-
 // function that delivers type test to typeTestField after any key is pressed 
 
-// function that registers keypresses and returns key code
-
-// function that takes key code and string array arguments
-// and maps it to each individual character.
-// Note: string array should be made up of individual characters
-
-// function that handles countdown time visible or not
 

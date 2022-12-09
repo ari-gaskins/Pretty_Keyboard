@@ -27,8 +27,11 @@
     [x] maybe make colors into a navbar setup?
     [x] figure out how to make it look cleaner
     [] setup typing test functionality
-    [] setup timer modes as dropdown menu in navbar
+    [x] setup timer modes as dropdown menu in navbar
+    [] find toggle (switch or button)
     [] want a toggle-able timer (hidden or visible)
+    [] add styles for timer features
+    [] make navbar grid for better organization
     [] bonus: endless timer mode that can be ended with esc key
     [x] might make settings into a hidden menu later
     [] write unit tests for main.js (will have to do after to spend time learning)
