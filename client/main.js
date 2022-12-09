@@ -21,6 +21,9 @@ let typeTestField = document.getElementById('type-test').innerHTML;
 
 // need variables representing HTML elements for timer countdown
 
+// imports from countdown module
+import { secondsArray } from "./modules/countdown";
+import { countdown } from "./modules/countdown";
 
 // seconds to countdown from
 let thirtySeconds = 30;
