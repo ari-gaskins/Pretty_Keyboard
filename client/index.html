@@ -12,7 +12,8 @@
             <div id="settings-wrapper">
                 <button id="settings"></button>
             </div> 
-            <nav id="navbar">  
+            <nav id="navbar">
+                <!--choose color here-->  
                 <ul id="colors">
                     <!--default is black and white-->
                     <li><button id="default">Default</button></li>
@@ -31,6 +32,14 @@
                 </ul>
 
                 <!--choose timer time here-->
+                <select name="timer-seconds" id="timer-seconds">
+                    <option value="thirty" default selected>30 s</option>
+                    <option value="forty-five">45 s</option>
+                    <option value="sixty">60 s</option>
+                    <option value="ninety">90 s</option>
+                    <option value="hundred-twenty">120 s</option>
+                    <option value="endless" hidden>Endless Mode</option>
+                </select>
                 <!--toggle timer on/off here-->
             </nav>
             <div id="close-wrapper">

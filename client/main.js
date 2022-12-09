@@ -20,6 +20,9 @@ let typeTestWords = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet',
 let typeTestField = document.getElementById('type-test').innerHTML;
 
 // need variables representing HTML elements for timer countdown
+let selectedOption = document.getElementById('timer-seconds');
+// test value retrieval
+// console.log(selectedOption.value);
 
 // imports from countdown module
 import { secondsArray } from "./modules/countdown";
