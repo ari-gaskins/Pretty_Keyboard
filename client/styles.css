@@ -161,7 +161,7 @@ li {
     margin: 5px;
     text-decoration: none;
     border: none;
-    background-color: var(--black);
+    background-color: inherit;
 }
 
 #default:hover, #default:focus { 
@@ -181,7 +181,7 @@ li {
 #baby-blues {
     font-size: 18px;
     color: var(--teal);
-    background-color: var(--black);
+    background-color: inherit;
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -198,7 +198,7 @@ li {
 #beach-day {
     font-size: 18px;
     color: var(--deepOrange);
-    background-color: var(--black);
+    background-color: inherit;
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -215,7 +215,7 @@ li {
 #orchid-field {
     font-size: 18px;
     color: var(--orchid);
-    background-color: var(--black);
+    background-color: inherit;
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -233,7 +233,7 @@ li {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
     color: var(--hackerGreen);
-    background-color: var(--black);
+    background-color: inherit;
     padding: 5px;
     margin: 5px;
     text-decoration: none;
@@ -251,7 +251,7 @@ li {
     font-size: 18px;
     font-family: 'Space Mono', monospace;
     color: var(--hackerLightBlue);
-    background-color: var(--black);
+    background-color: inherit;
     padding: 5px;
     margin: 5px;
     text-decoration: none;

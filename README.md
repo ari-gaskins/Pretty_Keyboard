@@ -22,6 +22,8 @@
 **Loose Tasks**: 
     [x] add font-families
     [] write script to add interactivity to buttons
+    [] write out features individually then add all to main.js
+    [] figure out to make modules work properly
     [x] upload to github
     [x] figure out how to setup hrefs with javascript functionality
     [x] maybe make colors into a navbar setup?
@@ -45,4 +47,4 @@ https://mycolor.space
 License links:
 Icons from [Icons8]: close icons, settings icons
     
-
+May have to scrap countdown and start over, switch gears on something else for now.
