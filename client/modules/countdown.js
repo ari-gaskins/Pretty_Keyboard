@@ -1,33 +1,40 @@
 // countdown timer module
 
-// array read for timer output
-let secondsArray = [];
+export const sleep = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds));
 
-// seconds to countdown from
-let thirtySeconds = 30;
-let fortyFiveSeconds = 45;
-let sixtySeconds = 60;
-let ninetySeconds = 90;
-let hundredTwentySeconds = 120;
-
-
-
-// function that takes amount of time in seconds and 
-// counts down recursively, stopping at 0.
-const countdown = (seconds) => {
-    secondsArray.push(seconds);
-    if (seconds <= 0) {
-        return;
-    } 
-    countdown(seconds-1);
+export const countdown = (seconds) => {
+    let secondsArray = [];
+    for (let i = seconds; i <= 0; i -= 1) {
+        secondsArray.push(i);
+    }
+    return secondsArray;
 }
 
-// test timer
-// countdown(30);
+export const chooseTimeAmount = (option) => {
+    let thirtySeconds = 30;
+    let fortyFiveSeconds = 45;
+    let sixtySeconds = 60;
+    let ninetySeconds = 90;
+    let hundredTwentySeconds = 120;
 
-// test iteration
-// secondsArray.forEach((elem) => console.log(elem));
-
-// function that handles countdown time visible or not
-
-export {secondsArray, countdown};
+    switch (option.value) {
+        case 'thirty':
+            return thirtySeconds;
+            break;
+        case 'forty-five':
+            return fortyFiveSeconds;
+            break;
+        case 'sixty':
+            return sixtySeconds;
+            break;
+        case 'ninety':
+            return ninetySeconds;
+            break;
+        case 'hundred-twenty':
+            return hundredTwentySeconds;
+            break;
+        default:
+            return thirtySeconds;
+            break;
+    }
+}

@@ -44,23 +44,37 @@
 .grid {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "nav-wrapper"
+        "timer-wrapper"
         "type-test-wrapper"
         "keyboard"
         "footer";
 } 
+
+html {
+    width: 100%;
+}
 
 /* default settings */
 body {
     font-family: 'Inter', sans-serif;
     color: var(--black);
     background-color: var(--white);
-    vertical-align: baseline;
     min-width: 1250px;
     min-height: 350px;
     max-width: 1904px; 
+}
+
+#timer-wrapper {
+    display: grid;
+    text-align: left; 
+}
+
+#timer {
+    padding: 30px;
+    margin: 10px;
 }
 
 #type-test {
