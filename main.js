@@ -1,21 +1,83 @@
-import { renderNavbar } from "./client/modules/navbar.js";
-//import {countdown, chooseTimeAmount, sleep} from "./client/modules/countdown.js";
+// this is the beta version of main module free
 
-//const renderTimer = () => {
-//    let selectedOption = document.getElementById('timer-seconds');
-//    let timerField = document.getElementById('timer');
-//    let getSeconds = chooseTimeAmount(selectedOption);
-//    let countdownArray = countdown(getSeconds);
-//
-//    let countdownToString = element => element.toString;
-//    countdownArray.forEach(countdownToString);
-//    
-//    for (let i = countdownArray.length; i <= 0; i -= 1) {
-//        timerField.innerHTML = countdownArray[i];
-//        sleep(1000);
-//    }
-//};
 
-//renderTimer;
+// navbar visibility function
+const renderNavbar = () => {
+   let navbarToggle = document.getElementById('navbar');
+   let settingsButton = document.getElementById('settings');
+   let closeButton = document.getElementById('close');
 
-renderNavbar;
+   settingsButton.onclick = () => { 
+      navbarToggle.style.visibility = 'visible';
+      settingsButton.style.visibility = 'hidden';
+      closeButton.style.visibility = 'visible';
+   }
+
+   closeButton.onclick = () => {
+      navbarToggle.style.visibility = 'hidden';
+      settingsButton.style.visibility = 'visible';
+      closeButton.style.visibility = 'hidden';
+   }
+};
+
+// timer feature
+const chooseTimeAmount = (option) => {
+    let time;
+    let option = document.getElementById('timer-seconds');
+
+    switch (option.value) {
+        case 'thirty':
+            return time = 30;
+            break;
+        case 'forty-five':
+            return time = 45;
+            break;
+        case 'sixty':
+            return time = 60;
+            break;
+        case 'ninety':
+            return time = 90;
+            break;
+        case 'hundred-twenty':
+            return time = 120;
+            break;
+        default:
+            return time = 30;
+            break;
+    }
+};
+
+const getTimeDigits = (time) => {
+    let secondsArray = [];
+    secondsArray.push(time);
+    if (time <= 0) {
+        return secondsArray;
+    }
+    getTimeDigits(--time);
+};
+
+const visualTimer = (time) => {
+    let timerField = document.getElementById('timer');
+
+    timerField.innerHTML = time + 's';
+};
+
+const countdownTimer = (time, visual) => {
+    let interval = 1000; // ms
+    let expected = Date.now() + interval;
+    let error = 'Timer not working!'
+
+    let timeStep = () => {
+        let dt = Date.now() - expected
+        if (dt > interval) {
+            return error;
+        }
+        for (let i = 0; i <= time.length; i++) {
+            visual(time[i]);            
+        }
+        expected += interval;
+        setTimeout(timeStep, Math.max(0, interval - dt));
+    }
+
+    setTimeout(timeStep, interval);
+};
