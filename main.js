@@ -138,7 +138,7 @@ defaultButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, white);
     bodyElem.style.setProperty(color, black);
     typeTestElem.style.setProperty(color, black);
-}
+};
 
 defaultDarkButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, white);
@@ -146,7 +146,7 @@ defaultDarkButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, black);
     bodyElem.style.setProperty(color, white);
     typeTestElem.style.setProperty(color, white);
-}
+};
 
 babyBluesButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, darkTeal);
@@ -154,7 +154,7 @@ babyBluesButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, teal);
     bodyElem.style.setProperty(color, lightTeal);
     typeTestElem.style.setProperty(color, babyTan);
-}
+};
 
 beachDayButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, deepTan);
@@ -162,7 +162,7 @@ beachDayButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, tan);
     bodyElem.style.setProperty(color, greyTan);
     typeTestElem.style.setProperty(color, white);
-}
+};
 
 orchidFieldButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, plum);
@@ -170,7 +170,7 @@ orchidFieldButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, orchid);
     bodyElem.style.setProperty(color, deepPink);
     typeTestElem.style.setProperty(color, cream);
-}
+};
 
 hackermanClassicButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, black);
@@ -178,7 +178,7 @@ hackermanClassicButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, black);
     bodyElem.style.setProperty(color, hackerGreen);
     typeTestElem.style.setProperty(color, hackerGreen);
-}
+};
 
 hackermanBlueButton.onclick = () => {
     navbarElem.style.setProperty(backgroundColor, hackerDarkBlue);
@@ -186,4 +186,40 @@ hackermanBlueButton.onclick = () => {
     bodyElem.style.setProperty(backgroundColor, hackerDarkBlue);
     bodyElem.style.setProperty(color, hackerLightBlue);
     typeTestElem.style.setProperty(color, hackerLightBlue);
-}
+};
+
+
+// keypress module 
+
+let isTypeTest = false;
+let isEscKey = false;
+
+let defaultMsg = 'Press any key to start';
+let typeTestField = document.getElementById('type-test');
+typeTestField.innerHTML = defaultMsg;
+
+const checkTesting = (testField) => {
+    if (testField.innerHTML !== defaultMsg) {
+        return isTypeTest = true;
+    }
+    return isTypeTest = false;
+};
+
+const checkEscKey = (event) => {
+    if (event.key !== 'Escape') {
+        return isEscKey = false;
+    }
+    return isEscKey = true;
+};
+
+window.addEventListener('keypress', checkEscKey);
+
+const resetTest = (event) => {
+    if (isEscKey && !isTypeTest) {
+       typeTestField.innerHTML = defaultMsg; 
+    }
+};
+
+const showTestField = (event, array) => {
+    
+};
