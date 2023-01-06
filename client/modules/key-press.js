@@ -1,13 +1,36 @@
 // key press capture module
 
-// function that delivers type test to typeTestField after 
-//any key is pressed
+// keypress module 
 
-// function that shows shift keys and hides primary keys 
-// when shift is held
+let isTypeTest = false;
+let isEscKey = false;
 
-// function that registers keypresses and returns key code
+let defaultMsg = 'Press any key to start';
+let typeTestField = document.getElementById('type-test');
+typeTestField.innerHTML = defaultMsg;
 
-// function that takes key code and string array arguments
-// and maps it to each individual character.
-// Note: string array should be made up of individual characters
+const checkTesting = (testField) => {
+    if (testField.innerHTML !== defaultMsg) {
+        return isTypeTest = true;
+    }
+    return isTypeTest = false;
+};
+
+const checkEscKey = (event) => {
+    if (event.key !== 'Escape') {
+        return isEscKey = false;
+    }
+    return isEscKey = true;
+};
+
+window.addEventListener('keypress', checkEscKey);
+
+const resetTest = (event) => {
+    if (isEscKey && !isTypeTest) {
+       typeTestField.innerHTML = defaultMsg; 
+    }
+};
+
+const showTestField = (event, array) => {
+    
+};
