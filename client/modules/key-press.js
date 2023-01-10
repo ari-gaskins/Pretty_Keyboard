@@ -1,13 +1,9 @@
-// key press capture module
-
 // keypress module 
 
 let isTypeTest = false;
 let isEscKey = false;
 
-let defaultMsg = 'Press any key to start';
-let typeTestField = document.getElementById('type-test');
-typeTestField.innerHTML = defaultMsg;
+
 
 const checkTesting = (testField) => {
     if (testField.innerHTML !== defaultMsg) {
@@ -25,12 +21,12 @@ const checkEscKey = (event) => {
 
 window.addEventListener('keypress', checkEscKey);
 
-const resetTest = (event) => {
-    if (isEscKey && !isTypeTest) {
-       typeTestField.innerHTML = defaultMsg; 
+const resetTest = (testField, msg) => {
+    if (!isEscKey && isTypeTest) {
+       // Do nothing 
     }
+    testField.innerHTML = msg;
 };
 
-const showTestField = (event, array) => {
-    
-};
+resetTest(typeTestField, defaultMsg);
+

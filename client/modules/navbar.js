@@ -1,6 +1,7 @@
 // navbar module
 
 export const renderNavbar = () => {
+   
    let navbarToggle = document.getElementById('navbar');
    let settingsButton = document.getElementById('settings');
    let closeButton = document.getElementById('close');

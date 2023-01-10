@@ -1,4 +1,6 @@
-const chooseTimeAmount = () => {
+// timer setup module
+
+export const chooseTimeAmount = () => {
     let time;
     let option = document.getElementById('timer-seconds');
 
